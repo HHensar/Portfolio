@@ -1,0 +1,9 @@
+[
+  {
+    "title": "This Website - Personal Portfolio",
+    "description": "A full-stack web application built with FastAPI, featuring dynamic content rendering from JSON and Markdown files. Includes responsive design, dark theme, and deployed on Linux VPS with Cloudflare.",
+    "technologies": ["FastAPI", "Jinja2", "Python", "HTML", "CSS", "Markdown", "JSON"],
+    "link": "/project/this_website",
+    "featured": true
+  }
+]

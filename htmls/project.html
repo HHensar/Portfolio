@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <title>{{ title }} - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            color: #e0e0e0;
+            background-color: #121212;
+        }
+        header {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            padding: 3rem 2rem;
+            text-align: left;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            margin-bottom: 2rem;
+        }
+        .header-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .back-link {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #00b2ca;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+            margin-bottom: 3rem;
+            border: 1px solid #333;
+        }
+        .content h1, .content h2, .content h3 {
+            color: #ffffff;
+        }
+        .content p, .content li {
+            color: #e0e0e0;
+        }
+        .content code {
+            background-color: #2a2a2a;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        .content pre {
+            background-color: #2a2a2a;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        footer {
+            background-color: #1e1e1e;
+            color: #b0b0b0;
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #333;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 2rem 1rem;
+            }
+            .header-content {
+                max-width: 100%;
+                padding: 0 1rem;
+                flex-direction: column;
+                align-items: center;
+            }
+            .back-link {
+                position: relative;
+                left: auto;
+                top: auto;
+                transform: none;
+                margin-bottom: 1rem;
+                font-size: 0.9rem;
+                align-self: flex-start;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .content {
+                padding: 2rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 1.5rem 1rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .content {
+                padding: 1.5rem 1rem;
+            }
+            .content h1, .content h2, .content h3 {
+                font-size: 1.4rem;
+            }
+            .content p, .content li {
+                font-size: 0.95rem;
+            }
+            .content pre {
+                padding: 0.75rem;
+                font-size: 0.85rem;
+            }
+            .back-link {
+                position: relative;
+                left: auto;
+                top: auto;
+                transform: none;
+                margin-bottom: 1rem;
+                font-size: 0.8rem;
+            }
+            h1 {
+                margin-left: 0; /* Remove left margin on mobile */
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/projects" class="back-link">&larr; Back to Projects</a>
+            <h1>{{ title }}</h1>
+        </div>
+    </header>
+
+    <div class="content">
+        {{ content | safe }}
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Hensar.com All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "header": {
+    "name": "Harrison Hensarling",
+    "title": "Software Engineering Student",
+    "school": "Auburn University"
+  },
+  "hero": {
+    "title": "Welcome to My Portfolio",
+    "description": "Passionate about building efficient and scalable software solutions."
+  },
+  "about": {
+    "title": "About Me",
+    "text": "I am a software engineering student at Auburn University with a strong interest in web development and machine learning."
+  },
+  "skills": [
+  "Python (FastAPI, Jinja2, PyTorch)",
+  "C++, Java, HTML, CSS, SQL (PostgreSQL, SQLite)",
+  "Deploying FastAPI applications on Linux VPS with Cloudflare Tunnels"
+],
+
+  "projects": [
+    {
+      "title": "This Website!",
+      "description": "A full-stack web app built with FastAPI, Jinja2 Templates, and hosted on a Linux server.",
+      "link": "/project/this_website"
+    }
+    
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Software Engineering",
+      "school": "Auburn University",
+      "year": "Expected May 2027"
+    }
+  ],
+  "contact": {
+    "title": "Contact Me"
+  },
+  "footer": {
+    "text": "&copy; 2026 Harrison Hensarling, All rights reserved."
+  }
+}
