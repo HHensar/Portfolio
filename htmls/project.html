@@ -70,6 +70,13 @@
             border-radius: 8px;
             overflow-x: auto;
         }
+        .content a {
+            color: #00b2ca;
+            text-decoration: none;
+        }
+        .content a:hover {
+            text-decoration: underline;
+        }
         footer {
             background-color: #1e1e1e;
             color: #b0b0b0;
@@ -152,7 +159,7 @@
     <div class="content">
         {{ content | safe }}
     </div>
-
+    
     <footer>
         <p>&copy; 2026 Hensar.com All rights reserved.</p>
     </footer>
