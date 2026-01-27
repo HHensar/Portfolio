@@ -23,8 +23,12 @@
       "title": "This Website!",
       "description": "A full-stack web app built with FastAPI, Jinja2 Templates, and hosted on a Linux server.",
       "link": "/project/this_website"
+    },
+    {
+      "title": "Easy Image Model",
+      "description": "A pytorch wrapper that handles image preprocessing, model creation, training, and evaluation for image classification tasks.",
+      "link": "/project/easy_image_model"
     }
-    
   ],
   "education": [
     {

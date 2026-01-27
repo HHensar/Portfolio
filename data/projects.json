@@ -4,6 +4,13 @@
     "description": "A full-stack web application built with FastAPI, featuring dynamic content rendering from JSON and Markdown files. Includes responsive design, dark theme, and deployed on Linux VPS with Cloudflare.",
     "technologies": ["FastAPI", "Jinja2", "Python", "HTML", "CSS", "Markdown", "JSON"],
     "link": "/project/this_website",
+    "featured": false
+  },
+  {
+    "title": "Easy Image Model",
+    "description": "A PyTorch wrapper that simplifies image classification tasks by handling image preprocessing, model creation, training, and evaluation.",
+    "technologies": ["Python", "PyTorch", "Image Processing", "Machine Learning"],
+    "link": "/project/easy_image_model",
     "featured": true
   }
 ]
