@@ -2,7 +2,7 @@
 **Source Code** [github.com/HHensar/easy_image_model](https://github.com/HHensar/easy_image_model)
 
 ## How It Works
-You organize your images into folders (one folder per category), and the library handles all the preprocessing automatically. No need to manually resize images, normalize pixel values, or write custom data loaders. Just point it at your data and train.
+You organize your images into folders (one folder per category), and the library handles all the preprocessing automatically. No need to manually resize images, normalize pixel values, or write custom data loaders.
 
 ## Key Features
 - Automatic image preprocessing (resizing, normalization)
@@ -47,3 +47,4 @@ The main goal was to make image classification as simple as possible. Instead of
 
 ## Technical Stack
 Built on PyTorch with a focus on simplicity and ease of use. Released under MIT License. Requires Python 3.9+. Default image input size is 224x224 pixels, but this can be configured based on your dataset requirements.
+
