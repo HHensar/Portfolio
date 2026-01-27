@@ -36,6 +36,9 @@ def projects_list(request: Request):
     except FileNotFoundError:
         projects = []
     
+    # Sort projects: featured first, then others
+    projects.sort(key=lambda x: (not x.get('featured', False), x.get('title', '')))
+    
     return templates.TemplateResponse("projects.html", {"request": request, "projects": projects})
 
 @app.get('/favicon.ico')
