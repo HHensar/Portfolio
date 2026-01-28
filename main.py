@@ -23,7 +23,7 @@ def project(name: str, request: Request):
     try:
         with open(f'projects/{name}.md', 'r', encoding='utf-8') as f:
             md_content = f.read()
-        html_content = markdown.markdown(md_content)
+        html_content = markdown.markdown(md_content, extensions=['fenced_code', 'codehilite'])
         return templates.TemplateResponse("project.html", {"request": request, "content": html_content, "title": name.replace('_', ' ').title()})
     except FileNotFoundError:
         return templates.TemplateResponse("404.html", {"request": request, "error": "Project not found"}, status_code=status.HTTP_404_NOT_FOUND)
@@ -48,3 +48,4 @@ def favicon():
 @app.exception_handler(404)
 async def not_found_handler(request: Request, exc):
     return templates.TemplateResponse("404.html", {"request": request, "error": "Page not found"}, status_code=status.HTTP_404_NOT_FOUND)
+
