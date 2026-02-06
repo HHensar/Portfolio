@@ -45,7 +45,13 @@ def projects_list(request: Request):
 def favicon():
     return FileResponse('static/favicon.ico')
 
+@app.api_route("/health", methods=['GET','HEAD'])
+def health(response: Response):
+    response.status_code = 200
+    return
+    
 @app.exception_handler(404)
 async def not_found_handler(request: Request, exc):
     return templates.TemplateResponse("404.html", {"request": request, "error": "Page not found"}, status_code=status.HTTP_404_NOT_FOUND)
+
 
