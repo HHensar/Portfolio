@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request, status
+from fastapi import FastAPI, Request, status, Response
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
@@ -53,5 +53,6 @@ def health(response: Response):
 @app.exception_handler(404)
 async def not_found_handler(request: Request, exc):
     return templates.TemplateResponse("404.html", {"request": request, "error": "Page not found"}, status_code=status.HTTP_404_NOT_FOUND)
+
 
 
